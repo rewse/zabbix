@@ -1,0 +1,15 @@
+#!/bin/sh
+
+TMP=/tmp/zabbix_restart.log
+
+/sbin/service $1 restart >> $TMP
+
+sleep 5
+
+echo "" >> $TMP
+echo "" >> $TMP
+tail -10 /var/log/messages >> $TMP
+
+cat $TMP | mail -s "Zabbix just tried to restart $1 on `hostname -s`" root
+
+rm $TMP

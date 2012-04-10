@@ -1,0 +1,2 @@
+zabbix ALL = NOPASSWD: /usr/local/sbin/zabbix_restart
+Defaults:zabbix !requiretty

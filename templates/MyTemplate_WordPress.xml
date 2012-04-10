@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export version="1.0" date="12.02.21" time="22.59">
+  <hosts>
+    <host name="MyTemplate_WordPress">
+      <proxy_hostid>0</proxy_hostid>
+      <useip>1</useip>
+      <dns></dns>
+      <ip>127.0.0.1</ip>
+      <port>10050</port>
+      <status>3</status>
+      <useipmi>0</useipmi>
+      <ipmi_ip>127.0.0.1</ipmi_ip>
+      <ipmi_port>623</ipmi_port>
+      <ipmi_authtype>0</ipmi_authtype>
+      <ipmi_privilege>2</ipmi_privilege>
+      <ipmi_username></ipmi_username>
+      <ipmi_password></ipmi_password>
+      <groups>
+        <group>Templates</group>
+        <group>Linux servers</group>
+        <group>MyTemplates</group>
+      </groups>
+      <triggers>
+        <trigger>
+          <description>Email of WordPress tats has been changed on server {HOSTNAME}</description>
+          <type>0</type>
+          <expression>{MyTemplate_WordPress:db.odbc.select[wordpress_tats_email].diff(0)}&gt;0</expression>
+          <url></url>
+          <status>0</status>
+          <priority>2</priority>
+          <comments></comments>
+        </trigger>
+      </triggers>
+      <items>
+        <item type="11" key="db.odbc.select[wordpress_tats_email]" value_type="1">
+          <description>MySQL selecting the email of WordPress tats</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>45</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>0</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params>DSN=wordpress&#13;
+user=wordpress&#13;
+password=PASSWORD&#13;
+sql=SELECT user_email FROM fkgn_users WHERE user_login = 'tats';</params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>WordPress</application>
+          </applications>
+        </item>
+      </items>
+      <templates/>
+      <graphs/>
+      <macros/>
+    </host>
+  </hosts>
+  <dependencies/>
+</zabbix_export>
