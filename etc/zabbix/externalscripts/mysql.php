@@ -23,7 +23,8 @@ define('UTIME',"/tmp/.zabbix_".SYSTEM.".utime");
 define('DTIME',"/tmp/.zabbix_".SYSTEM.".dtime");
 zabbix_config();
 
-date_default_timezone_set('America/New_York');
+#date_default_timezone_set('America/New_York');
+date_default_timezone_set('Asia/Tokyo');
 
 $type = $argv[1];
 
