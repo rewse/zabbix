@@ -49,7 +49,8 @@ $swap_memory = (int)`free -b | grep Swap | awk '{print \$2}'`;
 if ( DEBUG ) echo sprintf("Physical Memory: %s, Swap: %s\n",byte_size($physical_memory),byte_size($swap_memory));
 
 // Is this a 64bit machine?
-$bit64 = ereg("/64/",`uname -m`);
+#$bit64 = ereg("/64/",`uname -m`);
+$bit64 = preg_match("/64/",`uname -m`);
 
 // Gather localhost aliases
 $valids = array("localhost","127.0.0.1", "%");
