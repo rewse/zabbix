@@ -128,16 +128,20 @@ if ( $result )
 $Available = 1;
 
 if ( $type == "daily" ) {
+/*
 	if ( file_exists(DTIME) ) {
-		$Diff = (time() - filectime(DTIME))/60/60/24;
+		#$Diff = (time() - filectime(DTIME))/60/60/24;
+		$Diff = (time() - filectime(DTIME))/60/60;
 		if ( $Diff < 1 ) {
-			if ( DEBUG ) echo "Skipping daily gathering\n";
+			#if ( DEBUG ) echo "Skipping daily gathering\n";
+			if ( DEBUG ) echo "Skipping daily gathering [Diff=$Diff]\n";
 			echo 1;
 			exit(0);
 		}
 		unlink(DTIME);
 	}
 	file_put_contents(DTIME,"Ran at ".date("Y-m-d H:i")."\n");
+*/
 
 	// These are dangerous privileges
 	$privs = array(
