@@ -16,6 +16,9 @@ error_reporting(E_ALL|E_STRICT);
 define('DEBUG',true);
 define('SLOWINNODB',0);   // If you set this to 1, then the script is very careful about status variables to avoid http://bugs.mysql.com/bug.php?id=36600
 
+define('USABLE_MEMORY_RATIO', 9 / 2);
+define('SUGGESTED_DELTA_RATIO', 20);
+
 define('SYSTEM','mysql'.(DEBUG ? "-debug" : ""));
 define('LOG',"/tmp/zabbix_".SYSTEM.".log");
 define('DAT',"/tmp/zabbix_".SYSTEM.".dat");
@@ -128,16 +131,20 @@ if ( $result )
 $Available = 1;
 
 if ( $type == "daily" ) {
+/*
 	if ( file_exists(DTIME) ) {
-		$Diff = (time() - filectime(DTIME))/60/60/24;
+		#$Diff = (time() - filectime(DTIME))/60/60/24;
+		$Diff = (time() - filectime(DTIME))/60/60;
 		if ( $Diff < 1 ) {
-			if ( DEBUG ) echo "Skipping daily gathering\n";
+			#if ( DEBUG ) echo "Skipping daily gathering\n";
+			if ( DEBUG ) echo "Skipping daily gathering [Diff=$Diff]\n";
 			echo 1;
 			exit(0);
 		}
 		unlink(DTIME);
 	}
 	file_put_contents(DTIME,"Ran at ".date("Y-m-d H:i")."\n");
+*/
 
 	// These are dangerous privileges
 	$privs = array(
@@ -203,7 +210,8 @@ if ( $type == "daily" ) {
 	$Suggested_table_cache = max(256,$max_connections*2);
 
 	$Maximum_memory_possible = ($innodb_buffer_pool_size + $key_buffer_size + $max_connections * ($sort_buffer_size + $read_buffer_size + $binlog_cache_size) + $max_connections * mb(2));
-	$Available_memory = $physical_memory * 9 / 10;
+	#$Available_memory = $physical_memory * 9 / 10;
+	$Available_memory = $physical_memory * USABLE_MEMORY_RATIO / 10;
 	$Available_memory -= $max_connections * kb(256);
 
 	$Suggested_query_cache_size = ($Available_memory / 10 < mb(8) ? mb(8) : $Available_memory / 10);
@@ -566,10 +574,12 @@ echo 1;
 exit(0);
 
 function close($a,$b) { 
-	if ( $a == 0 && $b > 1 ) return 0;
-	if ( $b == 0 && $a > 1 ) return 0;
+#	if ( $a == 0 && $b > 1 ) return 0;
+#	if ( $b == 0 && $a > 1 ) return 0;
+	if ( $a == 0 ) return 0;
 	$delta = abs($b-$a)*100/$a;
-	return $delta < 90;
+#	return $delta < 90;
+	return $delta < SUGGESTED_DELTA_RATIO;
 }
 
 function kb($a) { return $a*1024; }
