@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="12.04.10" time="17.31">
+<zabbix_export version="1.0" date="12.04.11" time="16.10">
   <hosts>
     <host name="MyTemplate_MySQL">
       <proxy_hostid>0</proxy_hostid>
@@ -80,7 +80,7 @@
           <expression>{MyTemplate_MySQL:mysql.Accounts_with_broad_host_specifier.last(0)}&gt;0</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>Users without a host or users with a host of '%' only are security risks.  Consider specifying valid hosts for these users.</comments>
         </trigger>
         <trigger>
@@ -89,7 +89,7 @@
           <expression>{MyTemplate_MySQL:mysql.Anonymous_accounts_count.last(0)}&gt;0</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>Some accounts are present without usernames.  This allows anonymous access.  Consider removing these.</comments>
         </trigger>
         <trigger>
@@ -98,7 +98,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_innodb_additional_mem_pool_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_innodb_additional_mem_pool_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -107,7 +107,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_innodb_log_buffer_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_innodb_log_buffer_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -116,7 +116,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_innodb_log_file_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_innodb_log_file_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -125,7 +125,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_key_buffer_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_key_buffer_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -134,7 +134,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_myisam_sort_buffer_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_myisam_sort_buffer_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -143,7 +143,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_query_cache_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_query_cache_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -152,7 +152,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_read_buffer_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_read_buffer_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -161,7 +161,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_read_rnd_buffer_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_read_rnd_buffer_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -170,7 +170,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_sort_buffer_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_sort_buffer_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -179,7 +179,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_table_cache.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_table_cache to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -188,7 +188,7 @@
           <expression>{MyTemplate_MySQL:mysql.Change_tmp_table_size.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Review Suggested_tmp_table_size to determine the best setting</comments>
         </trigger>
         <trigger>
@@ -197,7 +197,7 @@
           <expression>{MyTemplate_MySQL:mysql.Com_grant.last(0)}&gt;0</expression>
           <url></url>
           <status>0</status>
-          <priority>2</priority>
+          <priority>1</priority>
           <comments>This is normal for development, but rare for production.  Investigave via the binary logs.</comments>
         </trigger>
         <trigger>
@@ -215,7 +215,7 @@
           <expression>{MyTemplate_MySQL:mysql.expire_logs_days.last(0)}=0</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>You have not set expire_logs_days in your my.cnf file.  With this, the mysqld will retain the entire binary log until RESET MASTER or PURGE MASTER LOGS commands are run manually.  Setting expire_logs_days will allow you to remove old binary logs automatically</comments>
         </trigger>
         <trigger>
@@ -224,7 +224,7 @@
           <expression>{MyTemplate_MySQL:mysql.Fragmented_table_count.last(0)}&gt;0</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>You have {ITEM.LASTVALUE} tables fragmented.  Please optimize.</comments>
         </trigger>
         <trigger>
@@ -233,7 +233,7 @@
           <expression>{MyTemplate_MySQL:mysql.have_query_cache.last(0)}=0</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Settings for my.cnf:  query_cache_type=1, query_cache_size=25% of total RAM, and query_cache_limit=1048576 (1-2MB)</comments>
         </trigger>
         <trigger>
@@ -250,8 +250,8 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.innodb_flush_log_at_trx_commit.last(0)}#2</expression>
           <url></url>
-          <status>0</status>
-          <priority>1</priority>
+          <status>1</status>
+          <priority>2</priority>
           <comments>Your innodb_flush_log_at_trx_commit is not "2" now.  Default value of 1 will mean each update transaction commit (or each statement outside of transaction) will need to flush log to the disk which is rather expensive, especially if you do not have Battery backed up cache. Many applications, especially those moved from MyISAM tables are OK with value 2 which means do not flush log to the disk but only flush it to OS cache. The log is still flushed to the disk each second so you normally would not loose more than 1-2 sec worth of updates. Value 0 is a bit faster but is a bit less secure as you can lose transactions even in case MySQL Server crashes. Value 2 only cause data loss with full OS crash.  Adjust innodb_flush_log_at_trx_commit in your my.cnf accordingly.</comments>
         </trigger>
         <trigger>
@@ -260,7 +260,7 @@
           <expression>{MyTemplate_MySQL:mysql.Is_root_remote_login_enabled.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>Root may log in remotely.  This is a big security risk.</comments>
         </trigger>
         <trigger>
@@ -269,7 +269,7 @@
           <expression>{MyTemplate_MySQL:mysql.Is_root_without_password.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>Root has no password.  This is a big security risk.</comments>
         </trigger>
         <trigger>
@@ -278,7 +278,7 @@
           <expression>{MyTemplate_MySQL:mysql.Joins_without_indexes_per_day.last(0)}&gt;100</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>&gt;100 joins/day don't use indices.  Consider increasing join_buffer_size or always use indices to improve.</comments>
         </trigger>
         <trigger>
@@ -287,7 +287,7 @@
           <expression>{MyTemplate_MySQL:mysql.local_infile.last(0)}=1</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>There are numerous security risks with 'LOAD DATA LOCAL' commands.  Consider setting local-infile=0 in your my.cnf file.</comments>
         </trigger>
         <trigger>
@@ -296,7 +296,7 @@
           <expression>{MyTemplate_MySQL:mysql.log_bin.last(0)}=0</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>4</priority>
           <comments>Binlog provides point-in-time recovery.  You probably want this enabled.</comments>
         </trigger>
         <trigger>
@@ -305,7 +305,7 @@
           <expression>{MyTemplate_MySQL:mysql.long_query_time.last(0)}&gt;2</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Your long query time is high now.  &lt;5s is recommended.  Set long_query_time=2 to start with.</comments>
         </trigger>
         <trigger>
@@ -314,7 +314,7 @@
           <expression>{MyTemplate_MySQL:mysql.myisam_recover_options.last(0)}=0</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>You probably want MyISAM auto-recovery enabled, especially if you have a lot of small MyISAM tables.  Corrupted tables can cause damage, and this is a reasonable compromise.  Set myisam-recover=BACKUP,FORCE in your my.cnf file.</comments>
         </trigger>
         <trigger>
@@ -331,7 +331,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_aborted_connections.last(0)}&gt;25</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>A large number of connections are getting aborted.  Look for users/apps using incorrect passwords or from unauthorized hosts.  Check connect_timeout too low.  Set log_warnings=2 to force logging of offenders.</comments>
         </trigger>
@@ -341,7 +341,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_aborted_connections.last(0)}&gt;30</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>A large number of connections are getting aborted.  Look for users/apps using incorrect passwords or from unauthorized hosts.  Check connect_timeout too low.  Set log_warnings=2 to force logging of offenders.</comments>
         </trigger>
         <trigger>
@@ -349,7 +349,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_connections_used.last(0)}&gt;75</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>Using over 75% of the max_connections.  Consider increasing.</comments>
         </trigger>
@@ -359,7 +359,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_connections_used.last(0)}&gt;85</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Using over 85% of the max_connections.  Consider increasing.</comments>
         </trigger>
         <trigger>
@@ -368,7 +368,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_files_open.last(0)}&gt;85</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>&gt;85% of files are open.  Consider increasing open_files_limit to improve.</comments>
         </trigger>
         <trigger>
@@ -376,7 +376,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_full_table_scans.last(0)}&gt;19</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>Should be kept as low as possible.  Use indexes or the slow query log to analyze.</comments>
         </trigger>
@@ -386,7 +386,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_full_table_scans.last(0)}&gt;39</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Ratio of the number of rows read via full table scans to the sum of all handler variables (which denotes all row accesses). A high value indicates excessive table scans. You should examine tables and queries for proper use of indexes. Turn on the slow query log, identify the queries using full table scan and tune it.</comments>
         </trigger>
         <trigger>
@@ -395,7 +395,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_innodb_cache_hit_rate.last(0)}&lt;85</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>You want most InnoDB transactions to be from memory, to keep this percentage high.  Start by increasing innodb_buffer_pool_size (can be 75/85% memory in InnoDB only installs).</comments>
         </trigger>
         <trigger>
@@ -403,7 +403,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_innodb_cache_hit_rate.last(0)}&lt;95</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>You want most InnoDB transactions to be from memory, to keep this percentage high.  Start by increasing innodb_buffer_pool_size (can be 75/85% memory in InnoDB only installs).</comments>
         </trigger>
@@ -412,7 +412,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_innodb_cache_write_waits_required.last(0)}&gt;0.01</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>For best performance, InnoDB should never have to wait to write to the buffer pool.  Increase innodb_buffer_pool_size and monitor.</comments>
         </trigger>
@@ -422,7 +422,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_innodb_cache_write_waits_required.last(0)}&gt;0.1</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>For best performance, InnoDB should never have to wait to write to the buffer pool.  Increase innodb_buffer_pool_size and monitor.</comments>
         </trigger>
         <trigger>
@@ -430,7 +430,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_myisam_key_cache_hit_rate.last(0)}&lt;95</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>Most MyISAM activity should hit the Key Cache.  If this falls low, increase key_buffer_size.</comments>
         </trigger>
@@ -440,7 +440,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_myisam_key_cache_hit_rate.last(0)}&lt;85</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Most MyISAM activity should hit the Key Cache.  If this falls low, increase key_buffer_size.</comments>
         </trigger>
         <trigger>
@@ -449,7 +449,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_query_cache_fragmentation.last(0)}&gt;20</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Binlog provides point-in-time recovery.  You probably want this enabled.</comments>
         </trigger>
         <trigger>
@@ -458,7 +458,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_query_cache_hit_rate.last(0)}&lt;20</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>Your query_cache efficiency is &lt;20%.  Consider increasing your query cache to improve.</comments>
         </trigger>
         <trigger>
@@ -466,7 +466,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_query_cache_pruned_from_inserts.last(0)}&gt;15</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>Query cache pruning due to memory at &gt;15%. Increase the query_cache_size when this starts to hit</comments>
         </trigger>
@@ -476,7 +476,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_query_cache_pruned_from_inserts.last(0)}&gt;20</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Query cache pruning due to memory at &gt;20%. Increase the query_cache_size when this starts to hit</comments>
         </trigger>
         <trigger>
@@ -485,7 +485,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_table_cache_hit_rate.last(0)}&lt;95</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>Opening tables can be expensive. For example MyISAM tables mark MYI header to mark table as currently in use. You do not want this to happen so frequently and it is typically best to size your cache so it is large enough to keep most of your tables open. It uses some OS resources and some memory but for modern hardware it is typically not the problem. 1024 is good value for applications with couple hundreds tables (remember each connection needs its own entry) if you have many connections or many tables increase it larger.</comments>
         </trigger>
         <trigger>
@@ -493,7 +493,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_table_lock_contention.last(0)}&gt;30</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>Table lock contention at &gt;30%. Look for LOCK TABLES using SHOW PROCESS LIST</comments>
         </trigger>
@@ -503,7 +503,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_table_lock_contention.last(0)}&gt;60</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Table lock contention at &gt;60%. Look for LOCK TABLES using SHOW PROCESS LIST</comments>
         </trigger>
         <trigger>
@@ -511,7 +511,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_thread_cache_hit_rate.last(0)}&lt;93</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>Threads are starting to miss Thread Cache.  Consider increasing thread_cache_sizeto improve</comments>
         </trigger>
@@ -521,7 +521,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_thread_cache_hit_rate.last(0)}&lt;90</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Threads are starting to miss Thread Cache (now at ITEM.LASTVALUE}%).  Consider increasing thread_cache_sizeto improve</comments>
         </trigger>
         <trigger>
@@ -530,7 +530,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_tmp_sort_tables.last(0)}&gt;100</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>&gt;100% queries require a temporary sort table.  Consider increasing sort_buffer_size and read_rnd_buffer_size to improve.</comments>
         </trigger>
         <trigger>
@@ -557,7 +557,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_tmp_tables_on_disk.last(0)}&gt;75</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Disk usage for tmp tables now at &gt;75%.  Change tmp_table_size or max_heap_table_size so that tables can be create in-memory more</comments>
         </trigger>
         <trigger>
@@ -565,7 +565,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Percent_transactions_saved_tmp_file.last(0)}&gt;10</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>Binlog_cache_size too low. Increase the binlog_cache_size variable in my.cnf</comments>
         </trigger>
@@ -575,7 +575,7 @@
           <expression>{MyTemplate_MySQL:mysql.Percent_transactions_saved_tmp_file.last(0)}&gt;30</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Binlog_cache_size too low. Increase the binlog_cache_size variable in my.cnf</comments>
         </trigger>
         <trigger>
@@ -584,7 +584,7 @@
           <expression>{MyTemplate_MySQL:mysql.Qcache_lowmem_prunes_per_day.last(0)}&gt;100</expression>
           <url></url>
           <status>0</status>
-          <priority>3</priority>
+          <priority>2</priority>
           <comments>&gt;100 queries are being pruned/day from your query cache.  Consider increasing your query cache to improve.</comments>
         </trigger>
         <trigger>
@@ -592,8 +592,8 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Root_accounts_count.last(0)}&gt;0</expression>
           <url></url>
-          <status>0</status>
-          <priority>1</priority>
+          <status>1</status>
+          <priority>2</priority>
           <comments>A user account named 'root' is really not needed, especially if the default 'root' with super-user privileges is still present.</comments>
         </trigger>
         <trigger>
@@ -620,7 +620,7 @@
           <expression>{MyTemplate_MySQL:mysql.sql_mode.last(0)}=0</expression>
           <url></url>
           <status>0</status>
-          <priority>1</priority>
+          <priority>2</priority>
           <comments>Utilize MySQL sql validation by setting the sql_mode variable in my.cnf to one of the following: TRADITIONAL, STRICT_TRANS_TABLES, STRICT_ALL_TABLES.</comments>
         </trigger>
         <trigger>
@@ -628,8 +628,8 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.sync_binlog.last(0)}=0</expression>
           <url></url>
-          <status>0</status>
-          <priority>1</priority>
+          <status>1</status>
+          <priority>2</priority>
           <comments>Setting sync_binlog=1 is slower, but insures you can recover from crashes and failures.</comments>
         </trigger>
         <trigger>
@@ -637,7 +637,7 @@
           <type>0</type>
           <expression>{MyTemplate_MySQL:mysql.Threads_running.last(0)}&gt;19</expression>
           <url></url>
-          <status>0</status>
+          <status>1</status>
           <priority>2</priority>
           <comments>Too many active threads indicate a heavy load.  Look for unoptimized queries and large result sets frequently being returned.</comments>
         </trigger>
@@ -647,8 +647,17 @@
           <expression>{MyTemplate_MySQL:mysql.Threads_running.last(0)}&gt;24</expression>
           <url></url>
           <status>0</status>
-          <priority>4</priority>
+          <priority>2</priority>
           <comments>Too many active threads indicate a heavy load.  Look for unoptimized queries and large result sets frequently being returned.</comments>
+        </trigger>
+        <trigger>
+          <description>MySQL: Change the innodb_buffer_pool_size on {HOSTNAME}</description>
+          <type>0</type>
+          <expression>{MyTemplate_MySQL:mysql.Change_innodb_buffer_pool_size.last(0)}=1</expression>
+          <url></url>
+          <status>0</status>
+          <priority>2</priority>
+          <comments>Review Suggested_innodb_buffer_pool_size to determine the best setting</comments>
         </trigger>
       </triggers>
       <items>
@@ -2084,9 +2093,9 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="0" key="mysql.daily" value_type="3">
-          <description>MySQL: Daily Controller</description>
+          <description>MySQL: Hourly Controller</description>
           <ipmi_sensor></ipmi_sensor>
-          <delay>86400</delay>
+          <delay>3600</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
@@ -3174,7 +3183,7 @@ sql=SELECT count(*) FROM user;</params>
         <item type="0" key="mysql.live" value_type="3">
           <description>MySQL: Live Controller</description>
           <ipmi_sensor></ipmi_sensor>
-          <delay>120</delay>
+          <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
@@ -5387,7 +5396,7 @@ sql=SELECT count(*) FROM user;</params>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
-          <status>0</status>
+          <status>1</status>
           <data_type>0</data_type>
           <units></units>
           <multiplier>0</multiplier>
@@ -5829,7 +5838,7 @@ sql=SELECT count(*) FROM user;</params>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
-          <status>0</status>
+          <status>1</status>
           <data_type>0</data_type>
           <units></units>
           <multiplier>0</multiplier>
