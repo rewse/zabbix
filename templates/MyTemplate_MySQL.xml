@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="12.04.11" time="16.10">
+<zabbix_export version="1.0" date="12.04.11" time="18.10">
   <hosts>
     <host name="MyTemplate_MySQL">
       <proxy_hostid>0</proxy_hostid>
@@ -740,7 +740,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -931,7 +931,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -965,7 +965,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>1</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1203,7 +1203,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1237,7 +1237,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1271,7 +1271,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1305,7 +1305,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1339,13 +1339,13 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
         </item>
         <item type="2" key="mysql.Change_myisam_sort_buffer_size" value_type="3">
-          <description>MySQL: Change key_buffer_size</description>
+          <description>MySQL: Change myisam_sort_buffer_size</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
@@ -1373,7 +1373,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1407,7 +1407,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1441,7 +1441,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1475,7 +1475,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1509,7 +1509,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1543,7 +1543,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1577,7 +1577,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -1998,7 +1998,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -2066,7 +2066,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -2121,7 +2121,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -2364,7 +2364,7 @@ sql=SELECT count(*) FROM user;</params>
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="mysql.have_query_cache" value_type="1">
+        <item type="2" key="mysql.have_query_cache" value_type="3">
           <description>MySQL: Query cache is enabled</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2393,7 +2393,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -2440,7 +2440,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -2739,7 +2739,7 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Is_root_remote_login_enabled" value_type="3">
-          <description>MySQL: Config: root login enabled</description>
+          <description>MySQL: Config: root remote login enabled</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
@@ -2767,7 +2767,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -2801,7 +2801,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3018,7 +3018,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -3209,13 +3209,13 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>1</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
         </item>
         <item type="2" key="mysql.local_infile" value_type="3">
-          <description>MySQL: Config: LOAD DATA LOCAL is insecure</description>
+          <description>MySQL: Config: LOAD DATA LOCAL disallowd</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
@@ -3243,7 +3243,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3311,7 +3311,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3345,7 +3345,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3379,7 +3379,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3447,7 +3447,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3481,7 +3481,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3623,7 +3623,7 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.myisam_recover_options" value_type="3">
-          <description>MySQL: MyISAM: Crashes not auto corrected</description>
+          <description>MySQL: MyISAM: Crashes auto corrected</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
@@ -3651,7 +3651,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3698,7 +3698,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -3753,7 +3753,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -3861,14 +3861,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_connections_used" value_type="3">
-          <description>MySQL: Connections: Percent of total used</description>
+          <description>MySQL: Connections: Total used %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -3895,14 +3895,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_deletes_vs_total" value_type="3">
-          <description>MySQL: Queries: % Deletes of overall</description>
+          <description>MySQL: Queries: Deletes % of overall</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -3936,7 +3936,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -3963,14 +3963,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_full_table_scans" value_type="3">
-          <description>MySQL: Queries: % Full table scans</description>
+          <description>MySQL: Queries: Full table scans %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -3997,14 +3997,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_innodb_cache_hit_rate" value_type="3">
-          <description>MySQL: InnoDB: Percent hit rate of cache</description>
+          <description>MySQL: InnoDB: Cache hit ratio %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4031,14 +4031,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_innodb_cache_write_waits_required" value_type="3">
-          <description>MySQL: InnoDB: Percent of cache writes to wait</description>
+          <description>MySQL: InnoDB: Cache writes to wait %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4072,7 +4072,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4106,7 +4106,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4133,14 +4133,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_inserts_vs_total" value_type="3">
-          <description>MySQL: Queries: % Inserts of overall</description>
+          <description>MySQL: Queries: Inserts % of overall</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4174,7 +4174,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4201,14 +4201,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_myisam_key_cache_hit_rate" value_type="3">
-          <description>MySQL: MyISAM: Key cache Hit ratio %</description>
+          <description>MySQL: MyISAM: Key cache hit ratio %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4242,7 +4242,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4276,7 +4276,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4337,14 +4337,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_query_cache_hit_rate" value_type="3">
-          <description>MySQL: Query cache hit rate %</description>
+          <description>MySQL: Query cache hit ratio %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4378,7 +4378,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4405,14 +4405,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_selects_vs_total" value_type="3">
-          <description>MySQL: Queries: % Selects of overall queries</description>
+          <description>MySQL: Queries: Selects % of overall</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4439,14 +4439,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_table_cache_hit_rate" value_type="3">
-          <description>MySQL: Table: Cache hit rate %</description>
+          <description>MySQL: Table: Cache hit ratio %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4480,7 +4480,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4514,7 +4514,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4541,14 +4541,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_tmp_sort_tables" value_type="3">
-          <description>MySQL: Queries: % Sorts requiring tmp tables</description>
+          <description>MySQL: Queries: Sorts requiring tmp tables %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4582,7 +4582,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4609,14 +4609,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_transactions_saved_tmp_file" value_type="3">
-          <description>MySQL: Queries: % transactions saved to disk</description>
+          <description>MySQL: Queries: Transactions saved to disk %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4643,14 +4643,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_updates_vs_total" value_type="3">
-          <description>MySQL: Queries: % Updates of overall queries</description>
+          <description>MySQL: Queries: Updates % of overall</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4677,14 +4677,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Percent_writes_vs_total" value_type="3">
-          <description>MySQL: Queries: % Write of overall queries</description>
+          <description>MySQL: Queries: Write % of overall</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4820,7 +4820,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4854,7 +4854,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4956,7 +4956,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -4990,7 +4990,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -5024,7 +5024,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -5126,7 +5126,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>B</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -5262,7 +5262,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -5425,7 +5425,7 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.secure_auth" value_type="3">
-          <description>MySQL: Config: Old password authentication allowed</description>
+          <description>MySQL: Config: Old password authentication disallowed</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
@@ -5453,7 +5453,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -5500,7 +5500,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -5561,7 +5561,7 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.skip_show_database" value_type="3">
-          <description>MySQL: Config: Users can view all databases</description>
+          <description>MySQL: Config: SHOW DATABASE disallowd</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
@@ -5589,7 +5589,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -5738,7 +5738,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -5874,7 +5874,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -6371,7 +6371,7 @@ sql=SELECT count(*) FROM user;</params>
           <snmpv3_securitylevel>0</snmpv3_securitylevel>
           <snmpv3_authpassphrase></snmpv3_authpassphrase>
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
+          <valuemapid>8</valuemapid>
           <applications>
             <application>MySQL</application>
           </applications>
@@ -6581,14 +6581,14 @@ sql=SELECT count(*) FROM user;</params>
           </applications>
         </item>
         <item type="2" key="mysql.Threads_created_rate" value_type="3">
-          <description>MySQL: Threads creation rate</description>
+          <description>MySQL: Threads creation ratio %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>%</units>
           <multiplier>0</multiplier>
           <delta>1</delta>
           <formula>1</formula>
@@ -6656,7 +6656,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>B</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -6724,7 +6724,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -6758,7 +6758,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -6860,7 +6860,7 @@ sql=SELECT count(*) FROM user;</params>
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>b</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
