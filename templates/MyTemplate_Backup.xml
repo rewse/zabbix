@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="12.04.03" time="19.11">
+<zabbix_export version="1.0" date="12.04.15" time="22.12">
   <hosts>
     <host name="MyTemplate_Backup">
       <proxy_hostid>0</proxy_hostid>
@@ -24,7 +24,7 @@
         <trigger>
           <description>Lack of free disk inode on {HOSTNAME} volume /var/bak</description>
           <type>0</type>
-          <expression>{MyTemplate_Backup:vfs.fs.inode[/var/bak,pfree].last(0)}&lt;5</expression>
+          <expression>{MyTemplate_Backup:vfs.fs.inode[/var/local/bak,pfree].last(0)}&lt;5</expression>
           <url></url>
           <status>0</status>
           <priority>2</priority>
@@ -33,7 +33,7 @@
         <trigger>
           <description>Lack of free disk space on {HOSTNAME} volume /var/bak</description>
           <type>0</type>
-          <expression>{MyTemplate_Backup:vfs.fs.size[/var/bak,pfree].last(0)}&lt;5</expression>
+          <expression>{MyTemplate_Backup:vfs.fs.size[/var/local/bak,pfree].last(0)}&lt;5</expression>
           <url></url>
           <status>0</status>
           <priority>2</priority>
@@ -75,7 +75,7 @@
             <application>Backup</application>
           </applications>
         </item>
-        <item type="0" key="vfs.fs.inode[/var/bak,pfree]" value_type="0">
+        <item type="0" key="vfs.fs.inode[/var/local/bak,pfree]" value_type="0">
           <description>Free disk inode on $1 in %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -109,7 +109,7 @@
             <application>Backup</application>
           </applications>
         </item>
-        <item type="0" key="vfs.fs.size[/var/bak,free]" value_type="3">
+        <item type="0" key="vfs.fs.size[/var/local/bak,free]" value_type="3">
           <description>Free disk space on $1</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -143,7 +143,7 @@
             <application>Backup</application>
           </applications>
         </item>
-        <item type="0" key="vfs.fs.size[/var/bak,pfree]" value_type="0">
+        <item type="0" key="vfs.fs.size[/var/local/bak,pfree]" value_type="0">
           <description>Free disk space on $1 in %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -177,8 +177,8 @@
             <application>Backup</application>
           </applications>
         </item>
-        <item type="0" key="vfs.fs.size[/var/bak,total]" value_type="3">
-          <description>Total disk space on /var/bak</description>
+        <item type="0" key="vfs.fs.size[/var/local/bak,total]" value_type="3">
+          <description>Total disk space on $1</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>3600</delay>
           <history>45</history>
@@ -211,7 +211,7 @@
             <application>Backup</application>
           </applications>
         </item>
-        <item type="0" key="vfs.fs.size[/var/bak,used]" value_type="3">
+        <item type="0" key="vfs.fs.size[/var/local/bak,used]" value_type="3">
           <description>Used disk space on $1</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
