@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="12.02.23" time="11.12">
+<zabbix_export version="1.0" date="12.04.26" time="15.11">
   <hosts>
     <host name="MyTemplate_Oracle">
       <proxy_hostid>0</proxy_hostid>
@@ -150,7 +150,7 @@
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>B</units>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>0</formula>
@@ -210,7 +210,7 @@
             <application>Oracle</application>
           </applications>
         </item>
-        <item type="0" key="vfs.fs.size[/u01,free]" value_type="0">
+        <item type="0" key="vfs.fs.size[/u01,free]" value_type="3">
           <description>Free disk space on $1</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -218,7 +218,7 @@
           <trends>450</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units>%</units>
+          <units>B</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>0</formula>
