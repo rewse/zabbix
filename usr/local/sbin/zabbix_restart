@@ -10,6 +10,8 @@ echo "" >> $TMP
 echo "" >> $TMP
 tail -10 /var/log/messages >> $TMP
 
-cat $TMP | mail -s "Zabbix just tried to restart $1 on `hostname -s`" root
+cat $TMP | tr -d '\000-\010\013-\037' |
+sed 's/\[60G\[//g' | sed 's/\[0;..m\]*//g' |
+mail -s "Zabbix just tried to restart $1 on `hostname -s`" root
 
 rm $TMP
