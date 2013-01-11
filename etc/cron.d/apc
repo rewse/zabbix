@@ -1,1 +1,0 @@
-*/5 * * * * root /usr/bin/curl -so /tmp/apc.php http://oscar.rewse.jp/admin/apc.php
