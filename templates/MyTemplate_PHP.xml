@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="13.01.11" time="17.40">
+<zabbix_export version="1.0" date="13.01.12" time="18.02">
   <hosts>
     <host name="MyTemplate_PHP">
       <proxy_hostid>0</proxy_hostid>
