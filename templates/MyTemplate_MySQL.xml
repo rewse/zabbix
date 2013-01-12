@@ -90,7 +90,7 @@
           <params>DSN=information_schema&#13;
 user=zabbix&#13;
 password=PASSWORD&#13;
-sql=SELECT COUNT(*) FROM information_schema;</params>
+sql=SELECT COUNT(*) FROM tables;</params>
           <trapper_hosts></trapper_hosts>
           <snmp_community></snmp_community>
           <snmp_oid></snmp_oid>
