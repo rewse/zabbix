@@ -23,7 +23,7 @@
         <trigger>
           <description>MySQL does not count the number of MySQL on {HOSTNAME}</description>
           <type>0</type>
-          <expression>{MyTemplate_MySQL:db.odbc.select[mysql_user_num].last(0)}&lt;0</expression>
+          <expression>{MyTemplate_MySQL:db.odbc.select[mysql_num_table].last(0)}&lt;0</expression>
           <url></url>
           <status>0</status>
           <priority>4</priority>
@@ -67,8 +67,8 @@
         </trigger>
       </triggers>
       <items>
-        <item type="11" key="db.odbc.select[mysql_user_num]" value_type="3">
-          <description>Number of MySQL user</description>
+        <item type="11" key="db.odbc.select[mysql_num_table]" value_type="3">
+          <description>Number of MySQL tables</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>45</history>
@@ -87,10 +87,10 @@
           <password></password>
           <publickey></publickey>
           <privatekey></privatekey>
-          <params>DSN=mysql&#13;
-user=root&#13;
+          <params>DSN=information_schema&#13;
+user=zabbix&#13;
 password=PASSWORD&#13;
-sql=SELECT count(*) FROM user;</params>
+sql=SELECT COUNT(*) FROM information_schema;</params>
           <trapper_hosts></trapper_hosts>
           <snmp_community></snmp_community>
           <snmp_oid></snmp_oid>
